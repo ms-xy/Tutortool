@@ -1,0 +1,19 @@
+.panel-heading {
+  font-weight: bold;
+}
+
+.panel>.table-bordered>thead>tr:first-child>th {
+  border-bottom: 2px solid #ddd !important;
+}
+
+.panel-subtitle {
+  color: #bdbdbd;
+  font-style: italic;
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+#diffview-body {
+  margin-bottom: 0;
+  overflow-x: auto;
+}

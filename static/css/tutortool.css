@@ -1,0 +1,110 @@
+/*------------------------------------------------------------------------------
+Global settings for specific elements
+------------------------------------------------------------------------------*/
+html {
+    /* constant scroll bar to prevent page jumps */
+    overflow-y:scroll;
+}
+
+/*------------------------------------------------------------------------------
+Style for the error view
+Beware that if it is not fixed, it needs a different floating center transform
+See comment inside floating-centered
+------------------------------------------------------------------------------*/
+#tt-error {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.18);
+}
+#tt-error .panel {
+  min-width: 50%;
+  max-width: 80%;
+}
+.floating-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* The following transform is better as it respects the size of the header */
+  /*transform: translate(-50%, calc(-50% - 70px));*/
+}
+
+/*------------------------------------------------------------------------------
+Some settings for panels
+------------------------------------------------------------------------------*/
+.tutortool-panel {
+  padding: 0px;
+  /*display: inline-flex;
+  height: 100%;*/
+}
+.tutortool-panel:not(:last-child) {
+  padding-right: 10px;
+}
+.tutortool-panel .tutortool-panel {
+  padding-right: 0px;
+}
+.tutortool-panel .panel:last-child {
+  margin-bottom: 10px;
+}
+.panel .panel-body .row {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.tt-panel-title {
+  padding: 10px 15px 10px 15px;
+}
+.tt-panel-title .tt-panel-title-inner {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.tt-panel-navbar {
+  padding: 10px 15px 10px 15px;
+}
+.panel .well:last-child {
+  margin-bottom: 0;
+}
+.panel .panel:last-child {
+  margin-bottom: 0;
+}
+
+/*------------------------------------------------------------------------------
+Style the optional footer
+------------------------------------------------------------------------------*/
+.footer .tutortool-button {
+  margin-left: 0px;
+  margin-top: 14px;
+}
+.footer .tutortool-button a,
+.footer .tutortool-button span {
+  color: white;
+}
+.footer .tutortool-button:hover .text {
+  text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------
+prism file listings
+------------------------------------------------------------------------------*/
+.line-numbers .line-numbers-rows {
+  top: -4px !important;  /* maybe even -5px */
+}
+/*
+Code for highlighting and line numbers is pretty easy actually:
+  - download prismjs, line-numbers plugin
+  - include all required scripts, add "data-manual" attribute to js script include to prevent auto execution
+  - elements to hold code must be <pre class="line-numbers"><code class="language-clike"></code></pre>
+  - then:
+    var code = `
+      include <stdio.h>
+      int main(int argc, char** argv) {
+        printf("hello world");
+      }
+    `;
+    var block = $("pre code")[0];
+    block.textContent = code;
+    Prism.highlightElement(block);;
+*/
