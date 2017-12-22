@@ -138,8 +138,8 @@ their authors and/or publishers. The user of the Tutortool acknowledges that
 they have read and agreed to the terms and conditions of these libraries:
 
 - [bootstrap](https://github.com/twbs/bootstrap/blob/master/LICENSE)
-- [jquery](jquery.org/license)
+- [jquery](https://jquery.org/license)
 - [prism.js](http://prismjs.com)
 - [Chart.js](https://github.com/chartjs/Chart.js/blob/master/LICENSE.md)
-- diff.js (BSD License, see file [static/js/diff.min.js](github.com/ms-xy/Tutortool/static/js/diff.min.js))
+- diff.js (BSD License, see file [static/js/diff.min.js](static/js/diff.min.js))
 - IE10 viewport adjustments by Twitter ([https://github.com/twbs/bootstrap/blob/master/LICENSE](https://github.com/twbs/bootstrap/blob/master/LICENSE))
