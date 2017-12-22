@@ -139,7 +139,7 @@ they have read and agreed to the terms and conditions of these libraries:
 
 - [bootstrap](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 - [jquery](https://jquery.org/license)
-- [prism.js](http://prismjs.com)
+- [prism.js](https://github.com/PrismJS/prism/blob/gh-pages/LICENSE)
 - [Chart.js](https://github.com/chartjs/Chart.js/blob/master/LICENSE.md)
 - diff.js (BSD License, see file [static/js/diff.min.js](static/js/diff.min.js))
 - IE10 viewport adjustments by Twitter ([https://github.com/twbs/bootstrap/blob/master/LICENSE](https://github.com/twbs/bootstrap/blob/master/LICENSE))
