@@ -8,23 +8,29 @@ This webserver listenes to port 8080 (for now, will be configurable later).
 
 ## Usage
 
-1. Open a terminal
-2. `$> go get "github.com/ms-xy/Tutortool"`
-3. `$> go get "github.com/ms-xy/rlimiter"`
-4. Switch to the directory you want to install the Tutortool in
-5. `$> cp $GOPATH/bin/Tutortool $GOPATH/bin/rlimiter ./`
-6. Create the configuration (see config section below)
-7. `$> ./Tutortool`
+1. Open a terminal and run:
 
-Alternatively you can leave the Tutortool binary in `$GOPATH/bin` if you have
-added that one to your `$PATH` variable.
-In this case you would change the points 5 and 7:
-
-5. `$> cp $GOPATH/bin/rlimiter ./`
-7. `$> Tutortool`
-
-rlimiter still has to be copied right now. That limitation will be removed
-someday in the future.
+    ```sh
+    go get "github.com/ms-xy/Tutortool"
+    go get "github.com/ms-xy/rlimiter"
+    ```
+   
+1. Switch to the directory you want to install the Tutortool in
+1. Create the configuration (see config section below)
+1. Copy the `rlimiter` and `Tutortool` executable to this directory:
+    
+    ```sh
+    cp "$GOPATH/bin/Tutortool" "$GOPATH/bin/rlimiter" ./
+    ```
+    This step might seem unnecessary.
+    However, it protects against accidentally overwriting
+    the binaries in the `GOPATH`.
+    
+1. Execute the Tutortool:
+    
+    ```sh
+    ./Tutortool
+    ```
 
 ## Configuration
 
