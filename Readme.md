@@ -1,6 +1,6 @@
-## Tutortool
+## Description
 
-This program is a grading tool for C(98/99/11) assignments. It provides a
+This is a grading tool for C(98/99/11) assignments. It provides a
 Web-GUI which is provided by a simple integrated webserver.
 The webserver is currently hard-coded to listen to port 8080.
 
