@@ -1,10 +1,8 @@
-## execute
-
 ## Tutortool
 
 This program is a grading tool for C(98/99/11) assignments. It provides a
-Web-GUI by launching a simple webserver.
-This webserver listenes to port 8080 (for now, will be configurable later).
+Web-GUI which is provided by a simple integrated webserver.
+The webserver is currently hard-coded to listen to port 8080.
 
 ## Usage
 
